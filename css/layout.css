@@ -1,15 +1,12 @@
-
 body {
-  min-height: 2000px;
-}
-
-.navbar-static-top {
-  margin-bottom: 19px;
+	margin-top: 107px;
+  	min-height: 2000px;
 }
 
 .center-align {
 	text-align: center;
 }
+
 img.center-align {
 	display: block;
 	margin-right: auto;
