@@ -33,27 +33,10 @@
 
           <!-- left menu -->
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">首頁</a></li>
-            <li><a href="#" onclick="show_subnav('subnav-location');">空間</a></li>
-            <li><a href="#">交通</a></li>
-            <li><a href="#">活動</a></li>
-
-            <!--
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Stay <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li class="dropdown-header">Choose one of below :</li>
-                <li class="divider"></li>
-                <li><a href="#">type 1</a></li>
-                <li><a href="#">type 2</a></li>
-                <li><a href="#">type 3</a></li>
-                <li><a href="#">type 4</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Restaurant</a></li>
-            <li><a href="#">Wedding</a></li>
-            <li><a href="#">Meeting Room</a></li>
-          -->
+            <li class="active"><a href="#" id="nav-home">首頁</a></li>
+            <!--<li><a href="#" onclick="show_subnav('subnav-location');">空間</a></li>-->
+            <li><a href="#" id="nav-space">空間 <span class="caret"></span></a></li>
+            <li><a href="#" id="nav-traffic">交通</a></li>
           </ul>
 
           <!-- right menu -->
@@ -69,176 +52,103 @@
       </div><!--/.container -->
     </nav>
 
-    <!-- sub-menu -->
-    <nav id="subnav-location" class="navbar navbar-default" role="navigation" style="background-color: #333333; display:none">
-      <div class="container center-align">
-        <div id="sub-navbar" class="navbar-collapse collapse">
-          <div class="row">
-            <div class="col-md-2">
-              <div style="color: white; font-size:1.5em">住宅</div>
-              <img src="images/thumb_nav_stay1.jpg" width="140">
-            </div>
-            <div class="col-md-2">
-              <div style="color: white; font-size:1.5em">辦公</div>
-              <img src="images/thumb_nav_stay1.jpg" width="140">
-            </div>
-            <div class="col-md-2">
-              <div style="color: white; font-size:1.5em">工作室</div>
-              <img src="images/thumb_nav_stay1.jpg" width="140">
-            </div>
-            <div class="col-md-2">
-              <div style="color: white; font-size:1.5em">店面</div>
-              <img src="images/thumb_nav_stay1.jpg" width="140">
-            </div>
-            <div class="col-md-2">
-              <div style="color: white; font-size:1.5em">會議·活動場地</div>
-              <img src="images/thumb_nav_stay1.jpg" width="140">
+    <!-- Sub-manu & Carousel Container
+    ===================================================================== -->
+    <div>
+      <!-- sub-menu -->
+      <nav id="subnav-space" class="navbar navbar-default sub-navbar" role="navigation">
+        <div class="container">
+          <div class="navbar-collapse collapse">
+            <div class="row">
+              <div class="col-md-2 subnav-cell">
+                <div>住宅</div>
+                <img src="images/thumb_nav_stay1.jpg">
+              </div>
+              <div class="col-md-2 subnav-cell">
+                <div>辦公</div>
+                <img src="images/thumb_nav_stay1.jpg">
+              </div>
+              <div class="col-md-2 subnav-cell">
+                <div>工作室</div>
+                <img src="images/thumb_nav_stay1.jpg">
+              </div>
+              <div class="col-md-2 subnav-cell">
+                <div>店面</div>
+                <img src="images/thumb_nav_stay1.jpg">
+              </div>
+              <div class="col-md-2 subnav-cell">
+                <div>會議·活動場地</div>
+                <img src="images/thumb_nav_stay1.jpg">
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+
+      <!--
+      <nav id="subnav-traffic" class="navbar navbar-default sub-navbar" role="navigation">
+        <div class="container">
+          <div class="navbar-collapse collapse">
+            <div class="row">
+            </div>
+          </div>
+        </div>
+      </nav>
+      -->
     
-    <!-- Carousel 
-    ===================================================================== -->
-    <div id="index-carousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#index-carousel" data-slide-to="0" class="active"></li>
-        <li data-target="#index-carousel" data-slide-to="1"></li>
-        <li data-target="#index-carousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img class="center-align" src="images/index-carousel-4.jpg" width="100%" alt="Guesthouse">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>彈性租期</h1>
+      <!-- Carousel 
+      ===================================================================== -->
+      <div id="index-carousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#index-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#index-carousel" data-slide-to="1"></li>
+          <li data-target="#index-carousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img class="center-align full-width" src="images/index-carousel-4.jpg" alt="Guesthouse">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>彈性租期</h1>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img class="center-align full-width" src="images/index-carousel-6.jpg" alt="Guesthouse">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>各種空間</h1>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img class="center-align full-width" src="images/index-carousel-5.jpg" alt="Guesthouse">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>大台北地區</h1>
+              </div>
             </div>
           </div>
         </div>
-        <div class="item">
-          <img class="center-align" src="images/index-carousel-6.jpg" width="100%" alt="Guesthouse">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>各種空間</h1>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="center-align" src="images/index-carousel-5.jpg" width="100%" alt="Guesthouse">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>大台北地區</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#index-carousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#index-carousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div><!-- /.carousel -->
+        <a class="left carousel-control" href="#index-carousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#index-carousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div><!-- /.carousel -->
 
-    <!-- Jumbotron 
+    </div><!-- /.sub-manu & carousel container -->
+
+    <!-- Contents
     ===================================================================== -->
-    <div class="container center-align">
-      <!-- Main component for a primary marketing message or call to action -->
-      <!--
-      <div class="jumbotron jumbotron-index">
-        <h1>What is Lorem Ipsum?</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        <p><a class="btn btn-lg btn-default" href="#" role="button">Get started today</a></p>
-      </div>
-      -->
-      <div class="jumbotron jumbotron-index">
-        <div style="font-size: 2em">預約・詢問 請來信</div>
-        <div style="font-size: 3em">morion.guesthouse@gmail.com</div>
-      </div>
+    <div class="container center-align margin-type1">
+        <div class="font-size2">預約・詢問 請來信</div>
+        <div class="font-size3">morion.guesthouse@gmail.com</div>
     </div> <!-- /.container -->
-
-    <!-- Contents 
-    ===================================================================== -->
-    <div class="container">
-
-      <!--
-      <div class="row">
-        <div class="col-md-8">
-          <h2>Something here...</h2>
-          <p>Quisque dui quam, tincidunt ut tincidunt auctor, dapibus et nisl. Donec pellentesque vitae nunc nec interdum. Nulla pretium, felis id feugiat auctor, ex mauris lacinia est, eget varius leo elit nec mi. In cursus lacinia urna. Vivamus odio elit, sodales at maximus eu, sollicitudin consectetur ex. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque efficitur purus sed arcu rhoncus, quis bibendum purus venenatis. Cras ac velit dignissim, posuere odio sit amet, gravida orci.</p>
-          <p><a class="btn btn-default" href="#">Click here</a></p>
-        </div>
-        <div class="col-md-4">
-          <h2>Waht?</h2>
-          <ul>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            <li>Praesent ut leo non nulla aliquam volutpat vel vel mi.</li>
-            <li>Proin accumsan mauris id leo molestie, ut venenatis orci laoreet.</li>
-            <li>Curabitur ultrices risus in lacus ornare, quis posuere dui mattis.</li>
-            <li>In non neque et purus luctus tincidunt.</li>
-          </ul>
-          <p><a class="btn btn-default" href="#">Do it</a></p>
-        </div>
-      </div> --><!-- /.row -->
-
-      <!--
-      <hr class="featurette-divider">
-      -->
-
-      <!--
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="images/index-room-1.jpg" alt="Generic placeholder image">
-        </div>
-      </div>
-      -->
-
-      <!--
-      <hr class="featurette-divider">
-      -->
-
-      <!--
-      <div class="row featurette">
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="images/index-room-2.jpg" alt="Generic placeholder image">
-        </div>
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-      </div>
-      -->
-
-      <!--
-      <hr class="featurette-divider">
-      -->
-
-      <!--
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="images/index-room-3.jpg" alt="Generic placeholder image">
-        </div>
-      </div>
-      -->
-
-      <!--
-      <hr class="featurette-divider">
-      -->
-
-    </div> <!-- /.container -->
-
 
     <!-- Bootstrap core JavaScript
     ===================================================================== -->
