@@ -3,9 +3,18 @@ body {
     min-height: 100%;
 }
 
-.margin-type1 {
+.v-margin-type1 {
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.v-margin-type2 {
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+
+.h-margin-type1 {
+    margin-left: 50px;
 }
 
 nav.sub-navbar {
@@ -23,7 +32,7 @@ nav.sub-navbar {
     color: #ffffff;
 }
 .subnav-cell img {
-    width: 90px;
+    width: 120px;
 }
 
 .full-width
@@ -51,4 +60,8 @@ img.center-align {
 .jumbotron-index {
     text-align: center;
     background-color: transparent;
+}
+
+a {
+    text-decoration: none;
 }
