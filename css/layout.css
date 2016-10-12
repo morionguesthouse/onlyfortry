@@ -22,7 +22,8 @@ body {
     margin-left: 50px;
 }
 nav.second-navbar{
-  padding-top: 60px;
+  background-color: rgba(0,0,0,0.5);
+  padding-top: 150px;
   top:60px;
 }
 nav.sub-navbar {
