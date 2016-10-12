@@ -22,6 +22,7 @@ body {
     margin-left: 50px;
 }
 nav.second-navbar{
+  padding-top: 60px;
   top:60px;
 }
 nav.sub-navbar {
