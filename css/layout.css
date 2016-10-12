@@ -24,8 +24,6 @@ body {
 nav.second-navbar{
 
   background-color: rgba(0,0,0,0.5);
-
-  position: relative; 
   top: 80px; 
   z-index: 2000;
   border: 0px;
