@@ -25,13 +25,13 @@ nav.second-navbar{
 
   background-color: rgba(0,0,0,0.5);
 
-  padding-top: 300px;
+  padding-top: 150px;
 
   z-index: 2000;
 
   width: 100%;
 
-  border: 0px;
+  border: 100px;
 
 }
 nav.sub-navbar {
