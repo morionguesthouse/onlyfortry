@@ -25,12 +25,12 @@ nav.second-navbar{
 
   background-color: rgba(0,0,0,0.5);
 
+  position: relative; 
+  top: 80px; 
   z-index: 2000;
-
+  border: 0px;
   width: 100%;
-
-  border: 100px;
-
+  display: none;
 }
 nav.sub-navbar {
     background-color: rgba(0,0,0,0.5);
