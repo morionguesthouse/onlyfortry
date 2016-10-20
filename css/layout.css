@@ -77,12 +77,5 @@ img.center-align {
 }
 
 a {
-  top: 107px; 
-  z-index: 2000;
-  border: 0px;
-  width: 100%;
-  display: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
   text-decoration: none;
 }
