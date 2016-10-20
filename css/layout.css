@@ -79,3 +79,12 @@ img.center-align {
 a {
     text-decoration: none;
 }
+a.content{
+  top: 107px; 
+  z-index: 2000;
+  border: 0px;
+  width: 100%;
+  display: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
