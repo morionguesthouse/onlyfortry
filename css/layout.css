@@ -32,14 +32,14 @@ nav.second-navbar{
   padding-bottom: 10px;
 }
 nav.sub-navbar {
-    background-color: rgba(0,0,0,0.5);
-    position: absolute;
-    z-index: 2000;
-    width: 100%;
-    border: 0px;
-    display: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  background-color: rgb(128,128,128);
+  top: 107px; 
+  z-index: 2000;
+  border: 0px;
+  width: 100%;
+  display: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 nav.sapce-navbar {
