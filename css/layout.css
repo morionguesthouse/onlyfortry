@@ -1,11 +1,8 @@
 body {
-    margin-top: 0px;
-    min-height: 100%;
-}
-body.sub-body{
     margin-top: 107px;
     min-height: 100%;
 }
+
 
 .v-margin-type1 {
     margin-top: 20px;
