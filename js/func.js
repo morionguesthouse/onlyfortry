@@ -16,3 +16,12 @@ $('#nav-space').click(function() {
 $('#nav-traffic').click(function() {
     show_subnav('#subnav-traffic');
 });
+
+$(document).ready(function(){
+    $('.nav li').click(function(){
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+
+    });
+
+});
